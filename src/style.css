@@ -1,0 +1,112 @@
+:root{
+  --bg:#F7F4F0; --card:#FFFFFF; --accent:#9A5E54; --accent-soft:#F5E8E4;
+  --gold:#B8994F; --rose:#C98F82;
+  --text:#3B3530; --text2:#6A615A; --muted:#9B928A;
+  --border:#E9E3DC; --border-strong:#D3C9BF;
+  --up:#B8392F; --down:#2E5CB5;
+  --thead:#4A433D; --thead-text:#F6F0E9;
+  --tint-total:#F7E7E2; --tint-intl:#F6EEDD; --tint-sub:#EFEDEA;
+  --grad:linear-gradient(90deg,#D9A99C 0%,#D8BD86 55%,#CFCBC6 100%);
+  --shadow:0 1px 2px rgba(59,53,48,.05),0 4px 16px rgba(59,53,48,.05);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+.num{font-family:"IBM Plex Mono","IBM Plex Sans KR",monospace;font-variant-numeric:tabular-nums}
+.topbar{height:3px;background:var(--grad)}
+.wrap{max-width:1200px;margin:0 auto;padding:20px 20px 60px}
+
+/* week nav */
+.weeknav{display:flex;gap:8px;margin:4px 4px 14px;flex-wrap:wrap}
+.weekpill{border:1px solid var(--border-strong);background:var(--card);color:var(--text2);border-radius:999px;padding:8px 18px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;box-shadow:var(--shadow)}
+.weekpill.active{background:var(--accent);border-color:var(--accent);color:#fff}
+/* section nav */
+.secnav{display:flex;gap:8px;flex-wrap:wrap;margin:0 4px 18px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:10}
+.secnav a{text-decoration:none;font-size:12px;font-weight:600;color:var(--text2);border:1px solid var(--border);background:var(--card);border-radius:999px;padding:6px 14px}
+.secnav a:hover{border-color:var(--accent);color:var(--accent)}
+/* cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);padding:20px 22px;margin-bottom:14px}
+.card h2{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.card h2 .kicker{font-size:11.5px;font-weight:600;color:var(--accent);letter-spacing:.04em}
+.card .sub{font-size:12px;color:var(--muted);margin-bottom:12px}
+/* summary grid */
+.sumgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.sumcard{background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);padding:16px;position:relative;overflow:hidden}
+.sumcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+.sumcard .tag{font-size:11px;font-weight:700;color:var(--accent);letter-spacing:.04em;margin-bottom:6px}
+.sumcard .txt{font-size:13px;font-weight:500;line-height:1.55}
+.sumcard .txt b{color:var(--accent)}
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+thead th{background:var(--thead);color:var(--thead-text);font-weight:600;text-align:left;padding:9px 12px;font-size:12px}
+thead th.num{text-align:right}
+tbody td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tbody td.num{text-align:right;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:#FBF9F6}
+.mkt h3{font-size:13.5px;font-weight:700;margin:16px 0 8px;color:var(--text)}
+.mkt h3:first-of-type{margin-top:0}
+.mkt .note{font-size:12.5px;color:var(--text2);margin:8px 0;line-height:1.6}
+.badge-up{display:inline-block;background:rgba(184,57,47,.12);color:var(--up);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+.badge-down{display:inline-block;background:rgba(46,92,181,.12);color:var(--down);border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+/* trend cards */
+.trend{border-left:4px solid var(--gold);background:#FDFBF7}
+.trend .src{font-size:11.5px;color:var(--muted);margin-bottom:6px}
+.trend ul{margin:8px 0 0 18px;font-size:13px;line-height:1.7;color:var(--text2)}
+/* route stats */
+.statrow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:14px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;cursor:pointer;transition:border-color .15s}
+.stat:hover{border-color:var(--accent)}
+.stat .n{font-size:22px;font-weight:700;font-family:"IBM Plex Mono",monospace}
+.stat .l{font-size:11.5px;font-weight:600;color:var(--text2);margin-top:4px}
+.stat.new .n{color:var(--accent)} .stat.up .n{color:var(--up)} .stat.down .n{color:var(--down)}
+/* accordion */
+.acc{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden;background:var(--card)}
+.acc-head{width:100%;background:none;border:none;font-family:inherit;display:flex;justify-content:space-between;align-items:center;padding:13px 18px;cursor:pointer;font-size:13.5px;font-weight:700;color:var(--text);text-align:left}
+.acc-head .cnt{font-size:11.5px;font-weight:600;color:var(--muted);background:var(--bg);border-radius:999px;padding:3px 12px}
+.acc-head .arrow{color:var(--accent);font-size:12px;transition:transform .2s}
+.acc.open .acc-head .arrow{transform:rotate(180deg)}
+.acc-body{display:none;padding:4px 18px 16px}
+.acc.open .acc-body{display:block}
+.acc-body ul{margin:0 0 0 18px;font-size:13px;line-height:1.75;color:var(--text2)}
+.acc-body li{margin-bottom:4px}
+.acc-body b{color:var(--text)}
+/* region tabs */
+.regtabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.regtab{border:1px solid var(--border-strong);background:var(--card);color:var(--text2);border-radius:999px;padding:7px 16px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit}
+.regtab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.regpanel{display:none}
+.regpanel.active{display:block}
+.regpanel ul{margin:0 0 0 18px;font-size:13px;line-height:1.75;color:var(--text2)}
+.regpanel li{margin-bottom:6px}
+.regpanel b{color:var(--text)}
+.regpanel .none{color:var(--muted);font-size:13px}
+/* insight cards */
+.insight{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.insight:last-child{border-bottom:none;padding-bottom:0}
+.insight .no{flex:0 0 30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.insight .tx{font-size:13px;line-height:1.65;color:var(--text2)}
+.insight .tx b{color:var(--text)}
+.src{font-size:12px;color:var(--muted);line-height:1.8}
+.src b{color:var(--text2)}
+footer{text-align:center;color:var(--muted);font-size:11.5px;margin-top:30px}
+@media(max-width:900px){.sumgrid{grid-template-columns:repeat(2,1fr)}.statrow{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.sumgrid{grid-template-columns:1fr}.statrow{grid-template-columns:repeat(2,1fr)}}
+
+/* === route-dashboard 레이아웃 (동시점 판매추이 대시보드와 동일) === */
+:root{--logo-ink:#686158}
+.app{max-width:1680px;margin:0 auto;padding-inline:20px;padding-block:20px 40px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:12px 24px;padding:0 0 16px}
+.brand h1{margin:0;font-size:24px;font-weight:700;letter-spacing:-.01em;text-wrap:balance;display:inline-block}
+.brand h1 .by{font-size:12px;font-weight:600;color:var(--text2);letter-spacing:0;margin-left:6px;vertical-align:3px}
+.brand .meta{margin:4px 0 0;color:var(--text2);font-size:13px;font-weight:400}
+.logo{color:var(--logo-ink);line-height:0;margin-top:2px}
+.logo-svg{display:block;height:40px;width:auto;max-width:100%}
+@media (max-width:640px){.app{padding-inline:16px}.logo{order:-1;width:100%}.logo-svg{height:26px}.brand h1{font-size:20px}}
+
+/* 표: 화면 폭만큼 늘리지 않고 내용 폭으로 */
+table{width:auto;max-width:100%}
+thead th,tbody td{white-space:nowrap}
+thead th:last-child,tbody td:last-child{white-space:normal;min-width:260px;max-width:560px}
+.src{line-height:1.9}.src b{display:inline-block;min-width:78px}.src .dim{color:var(--muted)}
+body,.weekpill,.regtab,.acc-head{font-family:"Daemyung","IBM Plex Sans KR","Malgun Gothic",sans-serif}
+.num,.stat .n{font-family:"Daemyung","IBM Plex Mono",monospace}
