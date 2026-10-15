@@ -1,10 +1,10 @@
 <main>
 <div class="secnav">
-  <a href="#{W}-s1">핵심 요약</a><a href="#{W}-s2">시장 지표</a><a href="#{W}-s3">수요 트렌드</a><a href="#{W}-s4">노선 변경</a><a href="#{W}-s5">대노선별 동향</a><a href="#{W}-s6">시사점</a>
+  <a href="#{W}-s1">핵심 요약</a><a href="#{W}-s2">시장 지표</a><a href="#{W}-s3">수요 트렌드</a><a href="#{W}-s5">대노선별·노선 변경</a><a href="#{W}-s6">시사점</a>
 </div>
 
 <div class="card" id="{W}-s1">
-  <h2><span class="kicker">KEY TAKEAWAYS</span> 핵심 요약</h2>
+  <h2>핵심 요약</h2>
   <div class="sub">2026-10-06 ~ 2026-10-12 수집 · 노선 변경 90건 · 시장지표 34개</div>
   <div class="sumgrid">
     <div class="sumcard"><div class="tag">연료비</div><div class="txt"><b>11월 유류할증료 인상 임박</b> — 국내선 <span class="num">25,300원(+21%)</span> 확정, 국제선 <b>27단계</b> 안팎 전망</div></div>
@@ -15,7 +15,7 @@
 </div>
 
 <div class="card mkt" id="{W}-s2">
-  <h2><span class="kicker">MARKET</span> 시장 지표</h2>
+  <h2>시장 지표</h2>
   <div class="sub">수요 · 비용 · 실적</div>
   <h3>수요 — 이번 주 신규 발표 지표 없음</h3>
   <table><thead><tr><th>지표</th><th>기간</th><th class="num">값</th><th>전년비</th></tr></thead>
@@ -39,7 +39,7 @@
 </div>
 
 <div class="card trend" id="{W}-s3">
-  <h2><span class="kicker">DEMAND TREND</span> 수요 트렌드</h2>
+  <h2>수요 트렌드</h2>
   <div class="src">Skyscanner "트래블 트렌드 2027" · 10/14 서울 미디어 데이 발표 · 한국인 1,000명 설문(6/17~29, OnePoll) + 자체 검색 데이터</div>
   <ul>
     <li>테마 <b>"Travel, Better Spent"</b> — 얼마나 적게 썼는지보다 무엇에 썼는지. 응답자 <b>80%</b> "내년 해외여행 올해만큼 이상", 항공권 예산 유지·확대 <b>73%</b></li>
@@ -51,9 +51,10 @@
   </ul>
 </div>
 
-<div class="card" id="{W}-s4">
-  <h2><span class="kicker">NETWORK CHANGES</span> 이번 주 노선 변경 <span style="font-size:12px;color:var(--muted);font-weight:500">총 90건</span></h2>
-  <div class="sub">카드를 누르면 상세 목록이 펼쳐집니다</div>
+<div class="card" id="{W}-s5">
+  <h2>대노선별 동향</h2>
+  <div class="sub">이번 주 노선 변경 90건 · 숫자 카드를 누르면 상세 목록이 펼쳐지고, 아래 지역 탭에서 지역별 동향을 봅니다</div>
+  <h3 class="blk">이번 주 노선 변경 <span class="blk-n">총 90건</span></h3>
   <div class="statrow">
     <div class="stat new" data-acc="{W}-new"><div class="n">30</div><div class="l">신규취항</div></div>
     <div class="stat new" data-acc="{W}-inc"><div class="n">15</div><div class="l">증편</div></div>
@@ -102,12 +103,8 @@
   <div class="acc" id="{W}-end"><button class="acc-head">단항 <span><span class="cnt">5건</span> <span class="arrow">▼</span></span></button><div class="acc-body"><ul>
     <li>American 5개 노선 단항 (2027 하계 스케줄 개편: 마이애미~몬트리올/툴룸, 피닉스~프로보, 시카고~링컨, 댈러스~앨버니)</li>
   </ul></div></div>
-</div>
-
-<div class="card" id="{W}-s5">
-  <h2><span class="kicker">BY REGION</span> 대노선별 동향</h2>
-  <div class="sub">지역 탭을 눌러 확인 — 전 지역 동일 수준 서술</div>
-  <div class="regtabs" data-reg="w2">
+  <h3 class="blk">지역별 동향</h3>
+  <div class="regtabs" data-reg="{W}">
     <button class="regtab active" data-r="{W}-r-dom">국내선</button>
     <button class="regtab" data-r="{W}-r-jp">일본</button>
     <button class="regtab" data-r="{W}-r-sea">동남아</button>
@@ -166,7 +163,7 @@
 </div>
 
 <div class="card" id="{W}-s6">
-  <h2><span class="kicker">IMPLICATIONS</span> 시사점</h2>
+  <h2>시사점</h2>
   <div class="sub">수지분석·노선조정 관점</div>
   <div class="insight"><div class="no">1</div><div class="tx"><b>연료비 민감도 시나리오 강화</b> — 11월 국제선 할증료 27단계 전망 + 국내선 +21% 확정. 감편·단항 타당성 검토 시 항공유 ±20%는 기본, <b>정제 마진(크랙) 변동</b>까지 반영할 것. 원유보다 제트유가 강한 구조 당분간 지속</div></div>
   <div class="insight"><div class="no">2</div><div class="tx"><b>당사 유럽 노선 재편의 분기점</b> — 프랑크푸르트(상용·환승) → 프라하(관광, A330-900neo) 전환 구상. 10/24 의무운항 종료가 1차 분기점, 프라하 취항까지의 공백은 대체 연결로 메우는 방안 검토</div></div>
@@ -175,7 +172,7 @@
 </div>
 
 <div class="card">
-  <h2><span class="kicker">SOURCES</span> 출처 및 수집 범위</h2>
+  <h2>출처 및 수집 범위</h2>
   <div class="src">
     <b>노선 변경</b> routes.csv 90건 (10/6~10/11 수집)<br>
     <b>비용</b> 아시아투데이(10/8), 뉴데일리(10/6)<br>

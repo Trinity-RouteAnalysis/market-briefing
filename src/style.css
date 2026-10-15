@@ -110,3 +110,8 @@ thead th:last-child,tbody td:last-child{white-space:normal;min-width:260px;max-w
 .src{line-height:1.9}.src b{display:inline-block;min-width:78px}.src .dim{color:var(--muted)}
 body,.weekpill,.regtab,.acc-head{font-family:"Daemyung","IBM Plex Sans KR","Malgun Gothic",sans-serif}
 .num,.stat .n{font-family:"Daemyung","IBM Plex Mono",monospace}
+
+/* 대노선별 동향 안의 소제목 */
+.card h3.blk{font-size:14px;font-weight:700;margin:16px 0 10px;padding-left:8px;border-left:3px solid var(--gold)}
+.card h3.blk:first-of-type{margin-top:4px}
+.card h3.blk .blk-n{font-size:12px;color:var(--muted);font-weight:500;margin-left:4px}

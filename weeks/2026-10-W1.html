@@ -1,10 +1,10 @@
 <main>
 <div class="secnav">
-  <a href="#{W}-s1">핵심 요약</a><a href="#{W}-s2">시장 지표</a><a href="#{W}-s3">수요 트렌드</a><a href="#{W}-s4">노선 변경</a><a href="#{W}-s5">대노선별 동향</a><a href="#{W}-s6">시사점</a>
+  <a href="#{W}-s1">핵심 요약</a><a href="#{W}-s2">시장 지표</a><a href="#{W}-s3">수요 트렌드</a><a href="#{W}-s5">대노선별·노선 변경</a><a href="#{W}-s6">시사점</a>
 </div>
 
 <div class="card" id="{W}-s1">
-  <h2><span class="kicker">KEY TAKEAWAYS</span> 핵심 요약</h2>
+  <h2>핵심 요약</h2>
   <div class="sub">2026-10-02 ~ 2026-10-05 수집 · 노선 변경 25건 · 시장지표 30개</div>
   <div class="sumgrid">
     <div class="sumcard"><div class="tag">연료비·환율</div><div class="txt"><b>유류할증료 10월 23단계(+2단계)</b> — MOPS <span class="num">$158.57(+6.2%)</span>, 환율 6개월 만에 1,400원대 복귀</div></div>
@@ -15,7 +15,7 @@
 </div>
 
 <div class="card mkt" id="{W}-s2">
-  <h2><span class="kicker">MARKET</span> 시장 지표</h2>
+  <h2>시장 지표</h2>
   <div class="sub">수요 · 비용 · 실적</div>
   <h3>수요 — 글로벌은 중동 발목, 아태 역내는 정체</h3>
   <table><thead><tr><th>지표</th><th>기간</th><th class="num">값</th><th>전년비</th></tr></thead><tbody>
@@ -39,13 +39,14 @@
 </div>
 
 <div class="card trend" id="{W}-s3">
-  <h2><span class="kicker">DEMAND TREND</span> 수요 트렌드</h2>
+  <h2>수요 트렌드</h2>
   <div class="src">이번 주 신규 트렌드 발표 없음</div>
 </div>
 
-<div class="card" id="{W}-s4">
-  <h2><span class="kicker">NETWORK CHANGES</span> 이번 주 노선 변경 <span style="font-size:12px;color:var(--muted);font-weight:500">총 25건</span></h2>
-  <div class="sub">카드를 누르면 상세 목록이 펼쳐집니다</div>
+<div class="card" id="{W}-s5">
+  <h2>대노선별 동향</h2>
+  <div class="sub">이번 주 노선 변경 25건 · 숫자 카드를 누르면 상세 목록이 펼쳐지고, 아래 지역 탭에서 지역별 동향을 봅니다</div>
+  <h3 class="blk">이번 주 노선 변경 <span class="blk-n">총 25건</span></h3>
   <div class="statrow">
     <div class="stat new" data-acc="{W}-new"><div class="n">13</div><div class="l">신규취항</div></div>
     <div class="stat new" data-acc="{W}-inc"><div class="n">3</div><div class="l">증편</div></div>
@@ -87,12 +88,8 @@
   <div class="acc" id="{W}-end"><button class="acc-head">단항 <span><span class="cnt">1건</span> <span class="arrow">▼</span></span></button><div class="acc-body"><ul>
     <li>Loganair 맨섬~런던 시티: 단항 (10/25~) — 수요 검토 결과 종료, 히스로 편으로 대체</li>
   </ul></div></div>
-</div>
-
-<div class="card" id="{W}-s5">
-  <h2><span class="kicker">BY REGION</span> 대노선별 동향</h2>
-  <div class="sub">지역 탭을 눌러 확인 — 전 지역 동일 수준 서술</div>
-  <div class="regtabs" data-reg="w1">
+  <h3 class="blk">지역별 동향</h3>
+  <div class="regtabs" data-reg="{W}">
     <button class="regtab active" data-r="{W}-r-dom">국내선</button>
     <button class="regtab" data-r="{W}-r-jp">일본</button>
     <button class="regtab" data-r="{W}-r-sea">동남아</button>
@@ -137,7 +134,7 @@
 </div>
 
 <div class="card" id="{W}-s6">
-  <h2><span class="kicker">IMPLICATIONS</span> 시사점</h2>
+  <h2>시사점</h2>
   <div class="sub">수지분석·노선조정 관점</div>
   <div class="insight"><div class="no">1</div><div class="tx"><b>연료비·환율 이중 압박</b> — 유류할증료 10월 23단계(+2), MOPS +6.2%, 환율 1,400원대 복귀. 감편·단항 타당성 검토 시 연료비 민감도 시나리오(항공유 ±20%) 반영 필요</div></div>
   <div class="insight"><div class="no">2</div><div class="tx"><b>중동 정세 리스크 상시화</b> — 운휴 4건 중 3건이 중동발. 중동 경유 동남아-유럽 장거리 노선 수지 검토 시 정세 리스크 프리미엄 반영 검토</div></div>
@@ -146,7 +143,7 @@
 </div>
 
 <div class="card">
-  <h2><span class="kicker">SOURCES</span> 출처 및 수집 범위</h2>
+  <h2>출처 및 수집 범위</h2>
   <div class="src">
     <b>노선 변경</b> 25건 (10/2~10/5 수집)<br>
     <b>수요</b> IATA 8월 통계 (10/2~10/3 보도)<br>
