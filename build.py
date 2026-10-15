@@ -51,6 +51,7 @@ def build():
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>항공시장 브리핑</title>
+<meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -70,6 +71,7 @@ def build():
 """
     (HERE / "index.html").write_text(out, encoding="utf-8")
     (HERE / ".nojekyll").touch()
+    (HERE / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")  # 검색 노출 차단
     print(f"[저장] index.html ({len(out.encode()) // 1024}KB, 주차 {len(weeks)}개)")
 
 
