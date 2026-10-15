@@ -115,3 +115,16 @@ body,.weekpill,.regtab,.acc-head{font-family:"Daemyung","IBM Plex Sans KR","Malg
 .card h3.blk{font-size:14px;font-weight:700;margin:16px 0 10px;padding-left:8px;border-left:3px solid var(--gold)}
 .card h3.blk:first-of-type{margin-top:4px}
 .card h3.blk .blk-n{font-size:12px;color:var(--muted);font-weight:500;margin-left:4px}
+
+/* 지역 탭 안 동향 + 노선 변경 */
+.chg-total{font-size:12.5px;color:var(--text2);margin-bottom:10px}
+.rg-h{font-size:13px;font-weight:700;margin:4px 0 8px;color:var(--text)}
+.rg-chg{margin-top:16px;padding-top:12px;border-top:1px dashed var(--border)}
+.rg-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.rg-chip{font-size:12px;border:1px solid var(--border);border-radius:999px;padding:3px 10px;color:var(--text2);background:var(--card)}
+.rg-chip.new b{color:var(--accent)}.rg-chip.down b{color:var(--down)}
+.rg-grp{margin-bottom:10px}.rg-gh{font-size:12.5px;font-weight:700;color:var(--accent);margin-bottom:2px}
+.regpanel .none{color:var(--muted);font-size:13px}
+
+/* 좁은 화면: 표가 넘치면 카드 안에서만 가로 스크롤 */
+.card{overflow-x:auto}
